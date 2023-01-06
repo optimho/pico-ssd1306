@@ -47,7 +47,7 @@ namespace pico_ssd1306{
     /// \param mode - mode describes setting behavior. See WriteMode doc for more information.
     /// \param rotation - either rotates the text by 90 deg or leaves it unrotated.
 
-    void drawDouble(pico_ssd1306::SSD1306 *ssd1306, const unsigned char * font, double number, uint8_t scale, uint8_t anchor_x, uint8_t anchor_y, WriteMode mode = WriteMode::ADD, Rotation rotation = Rotation::deg0);
+    void drawDouble(pico_ssd1306::SSD1306 *ssd1306, const unsigned char * font, double number, uint8_t scale = 0, uint8_t anchor_x =0, uint8_t anchor_y =0, WriteMode mode = WriteMode::ADD, Rotation rotation = Rotation::deg0);
 
 
 }
